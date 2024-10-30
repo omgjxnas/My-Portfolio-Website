@@ -129,12 +129,14 @@ h2 {
 /* ------------TASK MASTER-------------- */
 
 .taskmaster {
-    margin-top: 10vh;
+    text-align: center;
+    max-width: 1600px;
+    margin-top: 18vh;
     display: flex;
     align-items: center; /* Srovná obrázek a text vertikálně do středu */
     gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: auto;
 }
 
 .text-content-tm{
@@ -149,6 +151,10 @@ h2 {
     width: 480px;
     margin: 0; /* Odstraní výchozí okraje */
     margin-left: 40px;
+}
+
+.text-gradient-phone {
+    display: none;
 }
 
 .text-gradient{
@@ -216,11 +222,14 @@ h2 {
 /* ------------FARMERS HUB-------------- */
 
 .farmershub {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center; /* vycentruje obsah na stránce */
+    text-align: center;
+    max-width: 1600px;
     margin-top: 18vh;
-    padding-right: 40px; /* Vzdálenost od pravé strany */
+    display: flex;
+    align-items: center; /* Srovná obrázek a text vertikálně do středu */
+    gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-content-fh {
@@ -273,12 +282,14 @@ h2 {
 /* ------------FOODFLY-------------- */
 
 .foodfly {
+    text-align: center;
+    max-width: 1600px;
     margin-top: 18vh;
     display: flex;
     align-items: center; /* Srovná obrázek a text vertikálně do středu */
     gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: auto;
 }
 
 .mockup-ff {
@@ -287,27 +298,39 @@ h2 {
     margin-left: 40px;
 }
 
+.text-content-ff {
+    text-align: left;
+    width: auto;
+    height: auto;
+    margin-left: auto; /* Posune div k pravé straně */
+    margin-right: 10ch; 
+}
+
 /* ------------PORSCHE-------------- */
 
 
 .porsche {
+    max-width: 1600px;
     text-align: center;
     margin-top: 18vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mockup-p {
-    width: 1200px;
+    max-width: 1000px;
+    width: auto;
     height: auto;
     margin-top: 50px;
 }
 
 .long-discription-p {
-    margin-top: 20px; /* Upravený odsazení od obrázku */
+    margin-top: 4vh; /* Upravený odsazení od obrázku */
     font-size: 18px;
     font-family: 'Fira Code', monospace;
     font-weight: 300;
     color: #919191;
-    max-width: 1200px; /* Šířka textu podle šířky obrázku */
+    max-width: 1050px; /* Šířka textu podle šířky obrázku */
     margin-left: auto; /* Centrování */
     margin-right: auto; /* Centrování */
     text-align: left; /* Zarovná text na střed */
@@ -395,18 +418,10 @@ h2 {
 }
 
 /* Media query phone (440px) */
-@media only screen and (max-width: 990px) {
-
-    .navbar {
-        display: flex;
-        align-items: center; /* Zarovná položky vertikálně na střed */
-        padding: 20px;
-        color: #DBDDDF;
-        margin-top: 4vh;
-    }
-    
+@media only screen and (max-width: 430px) {
+  
     .logo {
-        max-width: 120px;
+        max-width: 130px;
         height: auto;
         margin-left: 1vh;
     }
@@ -417,7 +432,7 @@ h2 {
     
     .heading {
         text-align: center;
-        margin: 10vh auto 0;
+        margin: 8vh auto 0;
     }
     
     h1 {
@@ -450,59 +465,124 @@ h2 {
         cursor: pointer;
     }
 
+    /* -------------TASK MASTER--------------*/
 
     .taskmaster {
-        flex-direction: column; /* Uloží mockup a text do sloupce */
         align-items: left; /* Vycentruje obsah */
-        margin-left: 30px;
+        margin-left: 3vh;
         margin-top: 14vh;
         display: flex;
-        
+    }
+    
+    .text-content-tm{
+        text-align: left;
+        width: auto;
+        height: auto;
+        margin-left: auto; /* Posune div k pravé straně */
+        margin-right: 10ch; /* Přidá 40 px prostor z pravé strany */
+    }
+    
+    .mockup-tm {
+        width: 480px;
+        margin: 0; /* Odstraní výchozí okraje */
+        margin-left: 40px;
+    }
+    
+    .text-gradient{
+        display: none;
     }
 
+    .text-gradient-phone{
+        display: flex;
+        margin-left: 0;
+        background: linear-gradient(to right, #2C59ED, #FB8F15);
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        color: transparent; 
+        font-size: 38px;
+    }
+
+    h1 {
+        margin-left: 30px;
+        display: inline-block; /* Aby text zůstal na střed */
+        text-align: left;      /* Zarovnání textu doleva */
+        line-height: 1.5;      /* Nastavení výšky řádku pro lepší čitelnost */
+        color: #DBDDDF;
+        font-size: 2.5em;
+        font-family: Satoshi;
+        font-weight: 800;
+    }
+    
+    .short-discription {
+        margin-top: 0;
+        font-size: 20px;
+        color: #ECECEC;
+    }
+    
+    .long-discription {
+        margin-top: 16px;
+        font-size: 18px;
+        font-family: fira code;
+        font-weight: 300;
+        color: #919191;
+    }
+    
     .buttons {
-        flex-direction: column;
         width: 370px;
     }
+    /* -------------FOOD FLY--------------*/
 
-    .text-content-tm {
-        display: flex;
-        max-width: 360px;
-    }
-
-    .text-gradient {
-        margin-left: 0;
-    }
-
-    .porsche {
-        display: flex;
-        flex-direction: column; /* Uloží mockup a text do sloupce */
+    .foodfly {
         align-items: left; /* Vycentruje obsah */
-        text-align: left;
-        margin-left: 30px ;
+        margin-left: 3vh;
         margin-top: 14vh;
+        display: flex;
     }
+    
+
+    /* -------------FARMERS HUB--------------*/
 
     .farmershub {
         flex-direction: column; /* Uložení do sloupce */
         align-items: flex-start; /* Zarovnáno doleva */
         padding-right: 0; /* Odstranění pravého paddingu */
-        margin-left: 30px;
+        margin-left: 3vh;
         margin-top: 14vh;
     }
 
     .text-content-fh {
         width: 360px; /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
-        margin-right: 0; /* Odstranění pravého marginu */
+        margin-right: 10ch; /* Odstranění pravého marginu */
     }
 
-    .mockup-fh {
-        display: none; /* Skrytí mockupu */
+
+    /* -------------PORSCHE--------------*/
+
+    .porsche {
+        display: flex;
+        flex-direction: column; /* Uloží mockup a text do sloupce */
+        align-items: left; /* Vycentruje obsah */
+        text-align: left;
+        margin-left: 3vh;
+        margin-top: 14vh;
     }
+
+    .text-content-p{
+        width: 360px; /* Šířka textu na 100% */
+        margin-left: 0; /* Odstranění levého marginu */
+        margin-right: 10ch; /* Odstranění pravého marginu */
+    }
+    .long-discription-p {
+        margin-top: 16px;
+    }
+
+    /* -------------MOCKUP display none--------------*/
     
-
     .mockup-tm {
+        display: none;
+    }
+    .mockup-ff {
         display: none;
     }
     .mockup-fh {
@@ -514,8 +594,8 @@ h2 {
 
 }
 
-/* Media query smaller hone ß*/
-@media only screen and (max-width: 700px) {
+/* Media query smaller hone  */
+@media only screen and (max-width: 390px) {
 
     .buttons {
         flex-direction: column;
@@ -524,6 +604,21 @@ h2 {
     .text-content-fh {
         width: 330px; /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
-        margin-right: 0; /* Odstranění pravého marginu */
+        margin-right: 5ch; /* Odstranění pravého marginu */
+    }
+    .text-content-tm {
+        width: 330px; /* Šířka textu na 100% */
+        margin-left: 0; /* Odstranění levého marginu */
+        margin-right: 5ch; /* Odstranění pravého marginu */
+    }
+    .text-content-ff {
+        width: 330px; /* Šířka textu na 100% */
+        margin-left: 0; /* Odstranění levého marginu */
+        margin-right: 5ch; /* Odstranění pravého marginu */
+    }
+    .text-content-p{
+        width: 330px; /* Šířka textu na 100% */
+        margin-left: 0; /* Odstranění levého marginu */
+        margin-right: 5ch; /* Odstranění pravého marginu */
     }
 }
