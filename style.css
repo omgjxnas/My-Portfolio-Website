@@ -101,10 +101,26 @@ h2 {
     color: #2C59ED;
     margin-top: 8px;
     opacity: 70%;
+    cursor: pointer;
 }
 
+.scroll-icon {
+    animation: bounce 1s infinite; /* Změněno na 3 sekundy */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Původní pozice */
+    }
+    50% {
+        transform: translateY(-6px); /* Vyskočení nahoru o 10px */
+    }
+}
+
+
+
 .taskmaster {
-    margin-top: 18vh;
+    margin-top: 10vh;
     display: flex;
     align-items: center; /* Srovná obrázek a text vertikálně do středu */
     gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
@@ -161,19 +177,31 @@ h2 {
     font-size: 18px; /* Velikost písma */
     font-weight: 500;
     cursor: pointer; /* Změna kurzoru na ruku */
+    transition: color 0.5s, background-color 0.5s;
 }
 
+.btn-about:hover {
+    color: #2C59ED;
+    background-color: white;
+}
 
 .btn-open {
-    background-color: white; /* Barva pozadí */
-    color: #2C59ED; /* Barva textu */
-    border: none; /* Bez okraje */
+    background-color: transparent; /* Barva pozadí */
+    color: white; /* Barva textu */
+    border: solid 2px white; /* Bez okraje */
     border-radius: 38px; /* Zaoblení rohů */
     padding: 18px 28px; /* Vnitřní okraje */
     margin: 20px;
     font-size: 18px; /* Velikost písma */
     font-weight: 500;
     cursor: pointer; /* Změna kurzoru na ruku */
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-open:hover {
+    border: solid 2px white;
+    color: #2C59ED;
+    background-color: white;
 }
 
 .farmershub {
@@ -204,24 +232,35 @@ h2 {
     display: flex;
     align-items: center;
     border: none;      
-    background-color: white;
-    color: #2C59ED;
-    border: none;
+    background-color: #2C59ED;
+    color: #ffffff;
     border-radius: 38px;
     padding: 18px 28px;
     margin-top: 35px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
 
+.btn-pdf:hover {
+    color: #2C59ED;
+    background-color: white;
+}
+
+/* Přidáno pro změnu barvy ikony při hoveru na button */
+.btn-pdf:hover .icon-pdf {
+    color: #2C59ED;
 }
 
 .icon-pdf {
-    color: #2C59ED;
+    color: #ffffff;
     width: 30px;
     height: auto;
     margin-left: 8px;
+    transition: color 0.5s;
 }
+
 
 .porsche {
     text-align: center;
