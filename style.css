@@ -475,6 +475,7 @@ h2 {
     }
     
     .text-content-tm{
+        width: 350px
         text-align: left;
         width: auto;
         height: auto;
@@ -551,7 +552,7 @@ h2 {
     }
 
     .text-content-fh {
-        width: 360px; /* Šířka textu na 100% */
+        width: 350px /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
         margin-right: 10ch; /* Odstranění pravého marginu */
     }
@@ -569,7 +570,7 @@ h2 {
     }
 
     .text-content-p{
-        width: 30px; /* Šířka textu na 100% */
+        width: 350px; /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
         margin-right: 10ch; /* Odstranění pravého marginu */
     }
