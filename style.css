@@ -593,32 +593,3 @@ h2 {
     }
 
 }
-
-/* Media query smaller hone  */
-@media only screen and (max-width: 390px) {
-
-    .buttons {
-        flex-direction: column;
-        width: 370px;
-    }
-    .text-content-fh {
-        width: 330px; /* Šířka textu na 100% */
-        margin-left: 0; /* Odstranění levého marginu */
-        margin-right: 5ch; /* Odstranění pravého marginu */
-    }
-    .text-content-tm {
-        width: 330px; /* Šířka textu na 100% */
-        margin-left: 0; /* Odstranění levého marginu */
-        margin-right: 5ch; /* Odstranění pravého marginu */
-    }
-    .text-content-ff {
-        width: 330px; /* Šířka textu na 100% */
-        margin-left: 0; /* Odstranění levého marginu */
-        margin-right: 5ch; /* Odstranění pravého marginu */
-    }
-    .text-content-p{
-        width: 330px; /* Šířka textu na 100% */
-        margin-left: 0; /* Odstranění levého marginu */
-        margin-right: 5ch; /* Odstranění pravého marginu */
-    }
-}
