@@ -417,7 +417,7 @@ h2 {
     color: #2C59ED; /* Změna barvy na modrou */
 }
 
-/* Media query phone (440px) */
+/* Media query phone (40px) */
 @media only screen and (max-width: 430px) {
   
     .logo {
@@ -475,19 +475,13 @@ h2 {
     }
     
     .text-content-tm{
-        width: 350px
         text-align: left;
-        width: auto;
+        width: 350px;
         height: auto;
         margin-left: auto; /* Posune div k pravé straně */
         margin-right: 10ch; /* Přidá 40 px prostor z pravé strany */
     }
     
-    .mockup-tm {
-        width: 480px;
-        margin: 0; /* Odstraní výchozí okraje */
-        margin-left: 40px;
-    }
     
     .text-gradient{
         display: none;
@@ -552,7 +546,7 @@ h2 {
     }
 
     .text-content-fh {
-        width: 350px /* Šířka textu na 100% */
+        width: 350px; /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
         margin-right: 10ch; /* Odstranění pravého marginu */
     }
