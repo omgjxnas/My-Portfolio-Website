@@ -117,7 +117,7 @@ h2 {
     }
 }
 
-
+/* ------------TASK MASTER ovlada se i FOODFLY-------------- */
 
 .taskmaster {
     margin-top: 10vh;
@@ -204,6 +204,8 @@ h2 {
     background-color: white;
 }
 
+/* ------------FARMERS HUB-------------- */
+
 .farmershub {
     display: flex;
     align-items: flex-start;
@@ -261,6 +263,8 @@ h2 {
     transition: color 0.5s;
 }
 
+/* ------------PORSCHE-------------- */
+
 
 .porsche {
     text-align: center;
@@ -284,6 +288,8 @@ h2 {
     margin-right: auto; /* Centrování */
     text-align: left; /* Zarovná text na střed */
 }
+
+/* ------------CONTACT-------------- */
 
 .contact {
     margin-top: 18vh;
@@ -362,4 +368,121 @@ h2 {
 .threads:hover {
     transform: translateY(-5px); /* Posun nahoru */
     color: #2C59ED; /* Změna barvy na modrou */
+}
+
+/* Media query phone (440px) */
+@media only screen and (max-width: 770px) {
+
+    .navbar {
+        display: flex;
+        align-items: center; /* Zarovná položky vertikálně na střed */
+        padding: 20px;
+        color: #DBDDDF;
+        margin-top: 4vh;
+    }
+    
+    .logo {
+        max-width: 120px;
+        height: auto;
+        margin-left: 1vh;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .heading {
+        text-align: center;
+        margin: 10vh auto 0;
+    }
+    
+    h1 {
+        margin-left: 5%;
+        display: inline-block; /* Aby text zůstal na střed */
+        text-align: left;      /* Zarovnání textu doleva */
+        line-height: 1.5;      /* Nastavení výšky řádku pro lepší čitelnost */
+        color: #DBDDDF;
+        font-size: 2.5em;
+        font-family: Satoshi;
+        font-weight: 800;
+    }
+
+    .explore {
+        text-align: center;
+        margin: 8vh auto 0;
+    }
+    
+    h2 {
+        color: #bcbcbc;
+        font-family: satoshi;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    .scroll-icon {
+        color: #2C59ED;
+        margin-top: 8px;
+        opacity: 70%;
+        cursor: pointer;
+    }
+
+
+    .taskmaster {
+        flex-direction: column; /* Uloží mockup a text do sloupce */
+        align-items: left; /* Vycentruje obsah */
+        margin-left: 30px;
+        margin-top: 14vh;
+        
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .text-content {
+        max-width: 380px;
+    }
+
+
+    .text-gradient {
+        margin-left: 0;
+    }
+
+    .porsche {
+        flex-direction: column; /* Uloží mockup a text do sloupce */
+        align-items: left; /* Vycentruje obsah */
+        text-align: left;
+        margin-left: 30px ;
+        margin-top: 14vh;
+    }
+
+    .farmershub {
+        flex-direction: column; /* Uložení do sloupce */
+        align-items: flex-start; /* Zarovnáno doleva */
+        padding-right: 0; /* Odstranění pravého paddingu */
+        margin-left: 30px;
+        margin-top: 14vh;
+    }
+
+    .text-content-fh {
+        width: 100%; /* Šířka textu na 100% */
+        margin-left: 0; /* Odstranění levého marginu */
+        margin-right: 0; /* Odstranění pravého marginu */
+    }
+
+    .mockup-fh {
+        display: none; /* Skrytí mockupu */
+    }
+    
+
+    .mockup-tm {
+        display: none;
+    }
+    .mockup-fh {
+        display: none;
+    }
+    .mockup-p {
+        display: none;
+    }
+
 }
