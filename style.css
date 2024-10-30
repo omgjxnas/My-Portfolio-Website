@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url(fonts/FiraCode-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(fonts/Satoshi-Variable.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0C0E10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; /* Zarovná položky vertikálně na střed */
+    padding: 20px;
+    color: #DBDDDF;
+    margin-top: 4vh;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    margin-left: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    gap: 68px; 
+    margin-left: auto; 
+    margin-right: 10vh;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Velikost písma */
+    font-family: fira code;
+    font-weight: 300;
+    transition: color 0.5s;
+}
+
+.nav-links a:hover {
+    color: #2C59ED
+    
+}
+
+.github-icon {
+    color: white;
+    width: 30px;
+    height: auto;
+    margin-top: -5px;
+    transition: color 0.5s, transform 0.2s;
+}
+
+.github-icon:hover{
+    color: #2C59ED;
+}
+
+.github-icon:active{
+    transform: translateY(-5px);
+}
+
+
+.heading {
+    text-align: center;
+    margin: 18vh auto 0;
+}
+
+h1 {
+    display: inline-block; /* Aby text zůstal na střed */
+    text-align: left;      /* Zarovnání textu doleva */
+    line-height: 1.5;      /* Nastavení výšky řádku pro lepší čitelnost */
+    color: #DBDDDF;
+    font-size: 3.5em;
+    font-family: Satoshi;
+    font-weight: 800;
+}
+
+.explore {
+    text-align: center;
+    margin: 23.5vh auto 0;
+}
+
+h2 {
+    color: #6D6D6D;
+    font-family: satoshi;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.scroll-icon {
+    color: #2C59ED;
+    margin-top: 8px;
+    opacity: 70%;
+}
+
+.taskmaster {
+    margin-top: 18vh;
+    display: flex;
+    align-items: center; /* Srovná obrázek a text vertikálně do středu */
+    gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.text-content{
+    text-align: left;
+    width: 700px;
+    height: auto;
+    margin-left: auto; /* Posune div k pravé straně */
+    margin-right: 10ch; /* Přidá 40 px prostor z pravé strany */
+}
+
+.mockup-tm {
+    width: 480px;
+    margin: 0; /* Odstraní výchozí okraje */
+    margin-left: 40px;
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #2C59ED, #FB8F15);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    font-size: 42px;
+}
+
+.short-discription {
+    margin-top: 8px;
+    font-size: 28px;
+    color: #ECECEC;
+}
+
+.long-discription {
+    margin-top: 12px;
+    font-size: 18px;
+    font-family: fira code;
+    font-weight: 300;
+    color: #919191;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn-about {
+    background-color: #2C59ED; /* Barva pozadí */
+    color: white; /* Barva textu */
+    border: none; /* Bez okraje */
+    border-radius: 38px; /* Zaoblení rohů */
+    padding: 18px 28px; /* Vnitřní okraje */
+    font-size: 18px; /* Velikost písma */
+    font-weight: 500;
+    cursor: pointer; /* Změna kurzoru na ruku */
+}
+
+
+.btn-open {
+    background-color: white; /* Barva pozadí */
+    color: #2C59ED; /* Barva textu */
+    border: none; /* Bez okraje */
+    border-radius: 38px; /* Zaoblení rohů */
+    padding: 18px 28px; /* Vnitřní okraje */
+    margin: 20px;
+    font-size: 18px; /* Velikost písma */
+    font-weight: 500;
+    cursor: pointer; /* Změna kurzoru na ruku */
+}
+
+.farmershub {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* vycentruje obsah na stránce */
+    margin-top: 20vh;
+    padding-right: 40px; /* Vzdálenost od pravé strany */
+}
+
+.text-content-fh {
+    width: 60%; /* nastav šířku textového obsahu */
+    margin-right: 20px; /* mezera mezi textem a mockupem */
+    text-align: left;
+    height: auto;
+    margin-right: auto;
+    margin-left: 14ch;
+}
+
+.mockup-fh {
+    width: 700px;
+    margin: 0;
+    margin-left: 40px;
+}
+
+
+.btn-pdf {
+    display: flex;
+    align-items: center;
+    border: none;      
+    background-color: white;
+    color: #2C59ED;
+    border: none;
+    border-radius: 38px;
+    padding: 18px 28px;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.icon-pdf {
+    color: #2C59ED;
+    width: 30px;
+    height: auto;
+    margin-left: 8px;
+}
+
+.porsche {
+    text-align: center;
+    margin-top: 18vh;
+}
+
+.mockup-p {
+    width: 1200px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.long-discription-p {
+    margin-top: 20px; /* Upravený odsazení od obrázku */
+    font-size: 18px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+    color: #919191;
+    max-width: 1200px; /* Šířka textu podle šířky obrázku */
+    margin-left: auto; /* Centrování */
+    margin-right: auto; /* Centrování */
+    text-align: left; /* Zarovná text na střed */
+}
+
+.contact {
+    margin-top: 18vh;
+    background-color: #EDEDED;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-group {
+    display: flex;
+    gap: 30px;
+}
+
+.tag-text {
+    font-size: 18px;
+    font-family: satoshi;
+    font-weight: 300;
+    color: #2C59ED;
+    text-align: center;
+    margin-top: 3vh; 
+}
+
+.instagram {
+    display: inline-block; /* Umožňuje animaci */
+    transition: transform 0.3s ease, color 0.3s ease; /* Přidává hladký přechod */
+    cursor: pointer;
+}
+
+.instagram:hover {
+    transform: translateY(-5px); /* Posun nahoru */
+    color: #2C59ED; /* Změna barvy na modrou */
+}
+
+.github{
+    display: inline-block; /* Umožňuje animaci */
+    transition: transform 0.3s ease, color 0.3s ease; /* Přidává hladký přechod */
+    cursor: pointer;
+}
+
+.github:hover {
+    transform: translateY(-5px); /* Posun nahoru */
+    color: #2C59ED; /* Změna barvy na modrou */
+}
+
+.linkedin {
+    display: inline-block; /* Umožňuje animaci */
+    transition: transform 0.3s ease, color 0.3s ease; /* Přidává hladký přechod */
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    transform: translateY(-5px); /* Posun nahoru */
+    color: #2C59ED; /* Změna barvy na modrou */
+}
+
+.phone{
+    display: inline-block; /* Umožňuje animaci */
+    transition: transform 0.3s ease, color 0.3s ease; /* Přidává hladký přechod */
+    cursor: pointer;
+}
+
+.phone:hover {
+    transform: translateY(-5px); /* Posun nahoru */
+    color: #2C59ED; /* Změna barvy na modrou */
+}
+
+.threads{
+    display: inline-block; /* Umožňuje animaci */
+    transition: transform 0.3s ease, color 0.3s ease; /* Přidává hladký přechod */
+    cursor: pointer;
+}
+
+.threads:hover {
+    transform: translateY(-5px); /* Posun nahoru */
+    color: #2C59ED; /* Změna barvy na modrou */
+}
