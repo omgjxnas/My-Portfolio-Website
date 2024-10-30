@@ -569,7 +569,7 @@ h2 {
     }
 
     .text-content-p{
-        width: 360px; /* Šířka textu na 100% */
+        width: 30px; /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
         margin-right: 10ch; /* Odstranění pravého marginu */
     }
