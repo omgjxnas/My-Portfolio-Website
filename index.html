@@ -42,7 +42,7 @@
                     <br>
                     With a clean and functional interface, TaskMaster delivers seamless and visually engaging task management. This concept combines aesthetics with effective usability to help users achieve their goals with greater clarity and motivation.</p>
                 <div class="buttons">
-                    <button class="btn-about">More About</button>
+                    <button class="btn-about">More about</button>
                     <button class="btn-open">Open project</button>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                     <br>
                     The app is designed for users to browse restaurant offerings, quickly assemble orders, and track delivery in real-time. With a focus on user experience, I prioritized a clean, modern look that supports efficiency and provides a seamless food delivery experience.</p>
                 <div class="buttons">
-                    <button class="btn-about">More About</button>
+                    <button class="btn-about">More about</button>
                     <button class="btn-open">Open project</button>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                     <br>
                     This project allowed me to learn the fundamentals of converting design into code, with an emphasis on maintaining aesthetic quality and functionality. Although currently without clickable elements, this prototype serves as a foundation for a fully interactive web experience.</p>
                 <div class="buttons">
-                    <button class="btn-about">More About</button>
+                    <button class="btn-about">More about</button>
                     <button class="btn-open">Open project</button>
                 </div>
          </div>
@@ -124,7 +124,26 @@
             </div>
             <p class="tag-text">This is portfolio of  Jonas Podzemsky</p>
          </div>
-         
+
+         <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const scrollIcon = document.querySelector('.scroll-icon');
+        
+                // Animace skoku
+                setInterval(() => {
+                    scrollIcon.style.transform = 'translateY(-10px)'; // Vyskočit nahoru
+                    setTimeout(() => {
+                        scrollIcon.style.transform = 'translateY(0)'; // Vrátit zpět
+                    }, 300); // Doba trvání skoku
+                }, 3000); // Interval skoku každé 3 sekundy
+        
+                // Scrollování dolů po kliknutí
+                scrollIcon.addEventListener('click', function () {
+                    window.scrollBy({ top: 800, behavior: 'smooth' }); // Scroll dolů o 200 pixelů
+                });
+            });
+        </script>
+        
     
 
     </body>
