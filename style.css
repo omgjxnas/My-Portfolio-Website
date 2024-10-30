@@ -1,3 +1,5 @@
+/* ------------FONTS-------------- */
+
 @font-face {
     font-family: 'Fira Code';
     src: url(fonts/FiraCode-VariableFont_wght.ttf);
@@ -8,7 +10,12 @@
     src: url(fonts/Satoshi-Variable.ttf);
 }
 
+/* ------------BODY-------------- */
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +24,8 @@
 body{
     background-color: #0C0E10;
 }
+
+/* ------------NAVBAR-------------- */
 
 .navbar {
     display: flex;
@@ -50,7 +59,6 @@ body{
 
 .nav-links a:hover {
     color: #2C59ED
-    
 }
 
 .github-icon {
@@ -69,6 +77,7 @@ body{
     transform: translateY(-5px);
 }
 
+/* ------------HEADING A SCROLL TEXT-------------- */
 
 .heading {
     text-align: center;
@@ -117,7 +126,7 @@ h2 {
     }
 }
 
-/* ------------TASK MASTER ovlada se i FOODFLY-------------- */
+/* ------------TASK MASTER-------------- */
 
 .taskmaster {
     margin-top: 10vh;
@@ -128,9 +137,9 @@ h2 {
     margin-right: 40px;
 }
 
-.text-content{
+.text-content-tm{
     text-align: left;
-    width: 700px;
+    width: auto;
     height: auto;
     margin-left: auto; /* Posune div k pravé straně */
     margin-right: 10ch; /* Přidá 40 px prostor z pravé strany */
@@ -210,7 +219,7 @@ h2 {
     display: flex;
     align-items: flex-start;
     justify-content: center; /* vycentruje obsah na stránce */
-    margin-top: 20vh;
+    margin-top: 18vh;
     padding-right: 40px; /* Vzdálenost od pravé strany */
 }
 
@@ -228,7 +237,6 @@ h2 {
     margin: 0;
     margin-left: 40px;
 }
-
 
 .btn-pdf {
     display: flex;
@@ -250,7 +258,6 @@ h2 {
     background-color: white;
 }
 
-/* Přidáno pro změnu barvy ikony při hoveru na button */
 .btn-pdf:hover .icon-pdf {
     color: #2C59ED;
 }
@@ -261,6 +268,23 @@ h2 {
     height: auto;
     margin-left: 8px;
     transition: color 0.5s;
+}
+
+/* ------------FOODFLY-------------- */
+
+.foodfly {
+    margin-top: 18vh;
+    display: flex;
+    align-items: center; /* Srovná obrázek a text vertikálně do středu */
+    gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.mockup-ff {
+    width: 480px;
+    margin: 0; /* Odstraní výchozí okraje */
+    margin-left: 40px;
 }
 
 /* ------------PORSCHE-------------- */
@@ -432,6 +456,7 @@ h2 {
         align-items: left; /* Vycentruje obsah */
         margin-left: 30px;
         margin-top: 14vh;
+        display: flex;
         
     }
 
@@ -440,16 +465,17 @@ h2 {
         width: 370px;
     }
 
-    .text-content {
+    .text-content-tm {
+        display: flex;
         max-width: 360px;
     }
-
 
     .text-gradient {
         margin-left: 0;
     }
 
     .porsche {
+        display: flex;
         flex-direction: column; /* Uloží mockup a text do sloupce */
         align-items: left; /* Vycentruje obsah */
         text-align: left;
@@ -486,4 +512,18 @@ h2 {
         display: none;
     }
 
+}
+
+/* Media query smaller hone ß*/
+@media only screen and (max-width: 700px) {
+
+    .buttons {
+        flex-direction: column;
+        width: 370px;
+    }
+    .text-content-fh {
+        width: 330px; /* Šířka textu na 100% */
+        margin-left: 0; /* Odstranění levého marginu */
+        margin-right: 0; /* Odstranění pravého marginu */
+    }
 }
