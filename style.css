@@ -444,7 +444,7 @@ h2 {
         margin-left: 30px;
         margin-right: 30px;
         display: inline-block; 
-        text-align: center;      
+        text-align: left;      
         line-height: 1.4;      
         color: #ECECEC;
         font-size: 1.8em;
@@ -457,7 +457,7 @@ h2 {
     .buttons-phone {
         display: flex;
         flex-direction: column;
-        margin-top: 4vh;
+        margin-top: 6vh;
         gap: 20px;
         align-items: center;
     }
