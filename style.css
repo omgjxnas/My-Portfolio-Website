@@ -436,7 +436,7 @@ h2 {
     
     .heading {
         text-align: center;
-        margin: 7.3vh auto 0;
+        margin: 6vh auto 0;
     }
     
     .heading-text { 
@@ -456,7 +456,7 @@ h2 {
     .buttons-phone {
         display: flex;
         flex-direction: column;
-        margin-top: 6vh;
+        margin-top: 4vh;
         gap: 20px;
         align-items: center;
     }
@@ -516,7 +516,7 @@ h2 {
 
     .explore {
         text-align: center;
-        margin: 6vh auto 0;
+        margin: 4vh auto 0;
     }
     
     h2 {
