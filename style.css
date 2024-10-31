@@ -436,17 +436,18 @@ h2 {
     
     .heading {
         text-align: center;
-        margin: 6vh auto 0;
+        margin: 4vh auto 0;
     }
     
     .heading-text { 
         width: auto;
         margin-left: 30px;
+        margin-right: 30px;
         display: inline-block; 
-        text-align: left;      
+        text-align: center;      
         line-height: 1.4;      
         color: #ECECEC;
-        font-size: 2em;
+        font-size: 1.8em;
         font-family: Satoshi;
         font-weight: 800;
     }
