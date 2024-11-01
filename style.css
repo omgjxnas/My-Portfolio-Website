@@ -43,6 +43,12 @@ body{
 }
 
 .navbar {
+    position: sticky;
+    border: 2px solid #202224 ;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 22px;
+    background-color: #17191b;
     display: flex;
     align-items: center; /* Zarovná položky vertikálně na střed */
     padding: 20px;
@@ -53,12 +59,15 @@ body{
 .logo {
     max-width: 120px;
     height: auto;
+    margin-top: 5px;
     margin-left: 10vh;
 }
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 68px; 
+    margin-top: 0px;
     margin-left: auto; 
     margin-right: 10vh;
 }
@@ -66,7 +75,7 @@ body{
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px; /* Velikost písma */
+    font-size: 16px;
     font-family: fira code;
     font-weight: 300;
     transition: color 0.5s;
@@ -80,7 +89,7 @@ body{
     color: white;
     width: 30px;
     height: auto;
-    margin-top: -5px;
+    margin-top: 0px;
     transition: color 0.5s, transform 0.2s;
 }
 
@@ -253,7 +262,7 @@ h2 {
 .farmershub {
     text-align: center;
     max-width: 1600px;
-    margin-top: 18vh;
+    margin-top: 12vh;
     display: flex;
     align-items: center; /* Srovná obrázek a text vertikálně do středu */
     gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
@@ -318,7 +327,7 @@ h2 {
 .foodfly {
     text-align: center;
     max-width: 1600px;
-    margin-top: 18vh;
+    margin-top: 12vh;
     display: flex;
     align-items: center; /* Srovná obrázek a text vertikálně do středu */
     gap: 20px; /* Přidá mezeru mezi obrázkem a textem */
@@ -351,7 +360,7 @@ h2 {
 .porsche {
     max-width: 1600px;
     text-align: center;
-    margin-top: 18vh;
+    margin-top: 16vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -468,15 +477,40 @@ h2 {
         max-width: 130px;
         height: auto;
         margin-left: 1vh;
+        display: flex;
     }
-    
-    .nav-links {
+
+    .navbar {
+        top: 0;
+        display: flex;
+        align-items: center;
+        height: 70px;
+        max-width: 400px;
+        position: fixed;
+        display: absolute;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .github-icon {
+        display: flex;
+        position: relative;
+        color: white;
+        width: 30px;
+        height: auto;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 180px;
+        transition: color 0.5s, transform 0.2s;
+    }
+
+    .link {
         display: none;
     }
     
     .heading {
         text-align: center;
-        margin: 4vh auto 0;
+        margin: 17vh auto 0;
     }
     
     .heading-text { 
@@ -631,7 +665,7 @@ h2 {
     }
     
     .buttons {
-        width: 360px;
+        width: 361px;
         gap: 0px;
     }
     /* -------------FOOD FLY--------------*/
