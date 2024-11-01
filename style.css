@@ -27,6 +27,21 @@ body{
 
 /* ------------NAVBAR-------------- */
 
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    animation: slideInFromTop 0.8s ease-out;
+}
+
 .navbar {
     display: flex;
     align-items: center; /* Zarovná položky vertikálně na střed */
@@ -94,6 +109,10 @@ h1 {
     font-weight: 800;
 }
 
+#scroll-text {
+    transition: opacity 0.5s ease-out;
+}
+
 .buttons-phone {
     display: none;
 }
@@ -132,6 +151,7 @@ h2 {
 
 /* ------------TASK MASTER-------------- */
 
+
 .taskmaster {
     text-align: center;
     max-width: 1600px;
@@ -155,6 +175,11 @@ h2 {
     width: 480px;
     margin: 0;
     margin-left: 40px;
+    transition: transform 0.3s ease; /* Přidání hladkého přechodu */
+}
+
+.mockup-tm:hover {
+    transform: scale(1.1) rotate(5deg); /* Zvětšení a otočení obrázku */
 }
 
 .text-gradient-phone {
@@ -188,14 +213,14 @@ h2 {
 }
 
 .btn-about {
-    background-color: #2C59ED; /* Barva pozadí */
-    color: white; /* Barva textu */
-    border: none; /* Bez okraje */
-    border-radius: 38px; /* Zaoblení rohů */
-    padding: 18px 28px; /* Vnitřní okraje */
-    font-size: 18px; /* Velikost písma */
+    background-color: #2C59ED; 
+    color: white; 
+    border: none; 
+    border-radius: 38px; 
+    padding: 18px 28px; 
+    font-size: 18px; 
     font-weight: 500;
-    cursor: pointer; /* Změna kurzoru na ruku */
+    cursor: pointer; 
     transition: color 0.5s, background-color 0.5s;
 }
 
@@ -205,15 +230,15 @@ h2 {
 }
 
 .btn-open {
-    background-color: transparent; /* Barva pozadí */
-    color: white; /* Barva textu */
-    border: solid 2px white; /* Bez okraje */
-    border-radius: 38px; /* Zaoblení rohů */
-    padding: 18px 28px; /* Vnitřní okraje */
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    border-radius: 38px;
+    padding: 18px 28px;
     margin: 20px;
-    font-size: 18px; /* Velikost písma */
+    font-size: 18px;
     font-weight: 500;
-    cursor: pointer; /* Změna kurzoru na ruku */
+    cursor: pointer;
     transition: color 0.5s, background-color 0.5s;
 }
 
@@ -249,6 +274,11 @@ h2 {
     width: 700px;
     margin: 0;
     margin-left: 40px;
+    transition: transform 0.3s ease; /* Přidání hladkého přechodu */
+}
+
+.mockup-fh:hover {
+    transform: scale(1.1) rotate(5deg); /* Zvětšení a otočení obrázku */
 }
 
 .btn-pdf {
@@ -300,6 +330,11 @@ h2 {
     width: 480px;
     margin: 0; /* Odstraní výchozí okraje */
     margin-left: 40px;
+    transition: transform 0.3s ease; /* Přidání hladkého přechodu */
+}
+
+.mockup-ff:hover {
+    transform: scale(1.1) rotate(-5deg); /* Zvětšení a otočení obrázku */
 }
 
 .text-content-ff {
@@ -326,6 +361,11 @@ h2 {
     width: auto;
     height: auto;
     margin-top: 50px;
+    transition: transform 0.3s ease; /* Přidání hladkého přechodu */
+}
+
+.mockup-p:hover {
+    transform: scale(1.05); /* Zvětšení a otočení obrázku */
 }
 
 .long-discription-p {
@@ -591,17 +631,24 @@ h2 {
     }
     
     .buttons {
-        width: 370px;
+        width: 360px;
+        gap: 0px;
     }
     /* -------------FOOD FLY--------------*/
 
     .foodfly {
         align-items: left; /* Vycentruje obsah */
-        margin-left: 3vh;
+        margin-left: vh;
         margin-top: 14vh;
         display: flex;
     }
-    
+
+    .text-content-ff {
+        width: 330px; /* Šířka textu na 100% */
+        margin-left: 30px; /* Odstranění levého marginu */
+        margin-right: 0; /* Odstranění pravého marginu */
+    }
+
 
     /* -------------FARMERS HUB--------------*/
 
@@ -614,7 +661,7 @@ h2 {
     }
 
     .text-content-fh {
-        width: 350px; /* Šířka textu na 100% */
+        width: 330px; /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
         margin-right: 10ch; /* Odstranění pravého marginu */
     }
@@ -632,7 +679,7 @@ h2 {
     }
 
     .text-content-p{
-        width: 350px; /* Šířka textu na 100% */
+        width: 330px; /* Šířka textu na 100% */
         margin-left: 0; /* Odstranění levého marginu */
         margin-right: 10ch; /* Odstranění pravého marginu */
     }
