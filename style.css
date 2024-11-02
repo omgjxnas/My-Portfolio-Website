@@ -99,37 +99,53 @@ body{
 
 /* ------------HEADING A SCROLL TEXT-------------- */
 
-.heading {
-    text-align: center;
-    margin: 18vh auto 0;
-    animation: slideInFromLeftHeading 1s ease; 
-    
-}
 
 @keyframes slideInFromLeftHeading {
     0% {
-        transform: translateX(-100%);
         opacity: 0;
+        scale: 0.5;
     }
-    100% {
-        transform: translateX(0);
+    50% {
+        scale: 1.1;
+        opacity: 0.5;
+    }
+    100%{
+        scale: 1;
         opacity: 1;
     }
 }
-    
+
+.heading {
+    display: flex;           
+    justify-content: center;
+    align-items: center;     
+    margin: 18vh auto 0;   
+    animation: slideInFromLeftHeading 2s ease; 
+}  
 
 h1 {
-    display: inline-block; 
-    text-align: left;     
+    text-align: left;       
     line-height: 1.5;      
     color: #DBDDDF;
     font-size: 3.5em;
     font-family: Satoshi;
     font-weight: 800;
+    margin: 0;              
+    padding-left: 20px;    
 }
 
-#scroll-text {
-    transition: opacity 0.5s ease-out;
+.waving-emoji {
+    display: inline-block;
+    animation: wave 1s infinite;
+    position: relative;
+    margin-left: -6px;
+    margin-top: -2px !important; /* Přidání !important */
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(20deg) translateY(-5px); } /* Otočení o 20 stupňů a posun nahoru o 5px */
+    100% { transform: rotate(0deg) translateY(0); }
 }
 
 .buttons-phone {
@@ -139,12 +155,25 @@ h1 {
 .explore {
     text-align: center;
     margin: 23.5vh auto 0;
+    animation: ScrollUp 1s ease;
+}
+
+@keyframes ScrollUp {
+    0%{
+       transform: translateY(300%);
+       opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
 }
 
 h2 {
     color: #6D6D6D;
     font-family: satoshi;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
 }
 
@@ -530,7 +559,7 @@ h2 {
     }
     .heading {
         text-align: center;
-        margin: 17vh auto 0;
+        margin: 22vh auto 0;
         animation: slideInFromLeftHeading 0.5s ease; /
     }
     
@@ -552,7 +581,7 @@ h2 {
     .buttons-phone {
         display: flex;
         flex-direction: column;
-        margin-top: 6vh;
+        margin-top: 5.5vh;
         gap: 20px;
         align-items: center;
         animation: slideInFromLeftHeading 1s ease; /
@@ -560,30 +589,6 @@ h2 {
 
     .buttons-phone a {
         text-decoration: none;
-    }
-
-    .btn-phone-git {
-        width: 250px;
-        background-color: #2C59ED; 
-        color: white; 
-        border: none; 
-        border-radius: 38px; 
-        padding: 18px 28px; 
-        font-size: 18px; 
-        font-weight: 500;
-        cursor: pointer; 
-        display: flex;       
-        align-items: center; 
-        justify-content: center;
-    }
-
-    .btn-github-icon {
-        color: white;
-        width: 28px;
-        height: auto;
-        margin-left: 8px;    
-        margin-right: 0;
-        vertical-align: middle;
     }
 
     .btn-phone-contact {
@@ -613,7 +618,7 @@ h2 {
 
     .explore {
         text-align: center;
-        margin: 4vh auto 0;
+        margin: 5.5vh auto 0;
     }
     
     h2 {
@@ -714,16 +719,16 @@ h2 {
     /* -------------FOOD FLY--------------*/
 
     .foodfly {
+        display: flex;
         align-items: left; /* Vycentruje obsah */
         margin-left: 3vh;
         margin-top: 14vh;
-        display: flex;
     }
 
     .text-content-ff {
-        width: 330px; 
+        width: 100%; 
         margin-left: 0; 
-        margin-right: 10ch; 
+        margin-right: 6vh; 
     }
 
 
@@ -740,7 +745,7 @@ h2 {
     .text-content-fh {
         width: 330px; 
         margin-left: 0; 
-        margin-right: 10ch; 
+        margin-right: 3vh;
     }
 
 
@@ -783,3 +788,4 @@ h2 {
         display: none;
     }
 }
+
