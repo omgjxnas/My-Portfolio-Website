@@ -119,8 +119,8 @@ body{
     display: flex;           
     justify-content: center;
     align-items: center;     
-    margin: 18vh auto 0;   
-    animation: slideInFromLeftHeading 2s ease; 
+    margin: 14vh auto 0;   
+    animation: slideInFromLeftHeading 2.5s ease; 
 }  
 
 h1 {
@@ -130,8 +130,7 @@ h1 {
     font-size: 3.5em;
     font-family: Satoshi;
     font-weight: 800;
-    margin: 0;              
-    padding-left: 20px;    
+    margin: 0;
 }
 
 .waving-emoji {
@@ -152,20 +151,56 @@ h1 {
     display: none;
 }
 
+.button-contact-container{
+    text-align: center;
+}
+
+.btn-contact {
+    font-family: satoshi;
+    margin-top: 10vh;
+    width: 250px;
+    background-color: white; 
+    color: #2C59ED; 
+    border: none; 
+    border-radius: 38px; 
+    padding: 18px 28px; 
+    font-size: 18px; 
+    font-weight: 800;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Glow and color change on hover */
+.btn-contact:hover {
+    background-color: #2C59ED;
+    color: white;
+    box-shadow: 0 0 15px rgba(44, 89, 237, 0.6), 0 0 30px rgba(44, 89, 237, 0.4);
+    animation: shake 0.5s ease-in-out 1s infinite; /* Delay increased to 1s */
+}
+
+/* Keyframes for the shake effect */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+}
+
+
+
+
 .explore {
     text-align: center;
-    margin: 23.5vh auto 0;
+    margin: 8vh auto 0;
     animation: ScrollUp 1s ease;
 }
 
 @keyframes ScrollUp {
     0%{
-       transform: translateY(300%);
-       opacity: 0;
+       transform: translateY(200%);
     }
     100%{
         transform: translateY(0);
-        opacity: 1;
     }
     
 }
@@ -173,7 +208,7 @@ h1 {
 h2 {
     color: #6D6D6D;
     font-family: satoshi;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -218,6 +253,9 @@ h2 {
     margin-left: auto;
     margin-right: 10ch; 
 }
+.mockup-phone-1 {
+    display: none;
+}
 
 .mockup-tm {
     width: 480px;
@@ -240,6 +278,19 @@ h2 {
     background-clip: text; 
     color: transparent; 
     font-size: 42px;
+    left: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.text-gradient-p {
+    background: linear-gradient(to right, #2C59ED, #FF6D05);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 42px;
+    text-align: center;
+    display: inline-block; /* nebo block */
 }
 
 .short-discription {
@@ -335,6 +386,10 @@ h2 {
     transform: scale(1.1) rotate(5deg); 
 }
 
+.mockup-phone-3{
+    display: none;
+}
+
 .btn-pdf {
     display: flex;
     align-items: center;
@@ -387,6 +442,10 @@ h2 {
     transition: transform 0.3s ease;  
 }
 
+.mockup-phone-4 {
+    display: none;
+}
+
 .mockup-ff:hover {
     transform: scale(1.1) rotate(-5deg); 
 }
@@ -408,6 +467,10 @@ h2 {
     margin-top: 16vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+.mockup-phone-2 {
+    display: none;
 }
 
 .mockup-p {
@@ -637,6 +700,17 @@ h2 {
 
     /* -------------TASK MASTER--------------*/
 
+    .mockup-phone-1 {
+        display: flex;
+        margin-top: 20px;
+        width: auto;
+        max-width: 330px;
+        border-radius: 28px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     .taskmaster {
         align-items: left;
         margin-left: 3vh;
@@ -655,19 +729,20 @@ h2 {
     }
 
     .text-gradient-phone{
-        display: flex;
+        display: inline-block;
         margin-left: 0;
         background: linear-gradient(to right, #2C59ED, #FB8F15);
         -webkit-background-clip: text; 
         background-clip: text; 
         color: transparent; 
         font-size: 38px;
+        
     }
 
     h1 {
         margin-left: 30px;
         display: inline-block; 
-        text-align: left;     
+        text-align: center;     
         line-height: 1.5;      
         color: #DBDDDF;
         font-size: 2.5em;
@@ -687,6 +762,10 @@ h2 {
         font-family: fira code;
         font-weight: 300;
         color: #919191;
+    }
+
+    .buttons {
+        margin-top: 0;
     }
     
     .btn-about{
@@ -731,6 +810,17 @@ h2 {
         margin-right: 6vh; 
     }
 
+    .mockup-phone-4 {
+        display: flex;
+        margin-top: 20px;
+        width: auto;
+        max-width: 330px;
+        border-radius: 28px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     /* -------------FARMERS HUB--------------*/
 
@@ -748,6 +838,17 @@ h2 {
         margin-right: 3vh;
     }
 
+    .mockup-phone-3 {
+        display: flex;
+        margin-top: 20px;
+        width: auto;
+        max-width: 330px;
+        border-radius: 28px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     /* -------------PORSCHE--------------*/
 
@@ -758,6 +859,16 @@ h2 {
         text-align: left;
         margin-left: 3vh;
         margin-top: 14vh;
+    }
+
+     .mockup-phone-2{
+        display: flex;
+        margin-top: 20px;
+        max-width: 330px;
+        border-radius: 28px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .text-content-p{
@@ -772,6 +883,7 @@ h2 {
 
     /* -------------MOCKUP display none--------------*/
     
+
     .mockup-tm {
         display: none;
     }
@@ -785,6 +897,14 @@ h2 {
     }
 
     .mockup-p {
+        display: none;
+    }
+
+    .button-contact-container{
+        display: none;
+    }
+
+    .text-gradient-p{
         display: none;
     }
 }
